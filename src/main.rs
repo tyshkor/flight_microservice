@@ -23,7 +23,7 @@ async fn main() -> std::io::Result<()> {
                       )
                       .into()
         }))
-        .route("/", post().to(search_path))
+        .route("/path", post().to(search_path))
     })
     .bind("127.0.0.1:8080")?
     .run()
