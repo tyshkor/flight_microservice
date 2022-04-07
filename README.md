@@ -5,15 +5,19 @@
 GET /path
 
 Request of type application/json
-Sample data: 
+Sample data:
+```
 {
     "flights": [["IND", "EWR"],["SFO", "ATL"],["GSO", "IND"],["ATL", "GSO"]]
 }
+```
 
 Response
+```
 {
     "path": [
         "SFO",
         "EWR"
     ]
 }
+```
